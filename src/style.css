@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400;700&display=swap');
 
 :root {
   --header-text: #555248;
@@ -16,6 +16,59 @@ body {
   color: #000;
 }
 
+/* Компоненты */
+.line {
+  width: 50px;
+  height: 0px;
+  left: 120px;
+  top: 357px;
+  border: 1px solid #8b8371;
+}
+.button {
+  cursor: pointer;
+  width: 205px;
+  height: 64px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button_dark {
+  background: #444240;
+}
+
+/* Текст */
+.first-screen__title {
+  font-family: 'Playfair Display';
+  font-size: 45px;
+  line-height: 60px;
+  color: var(--main-text);
+  padding: 16px 0;
+}
+.second__title {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 36px;
+}
+.first-screen__description {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--main-text);
+  opacity: 0.82;
+  padding-bottom: 64px;
+}
+
+/* Слои */
+.container {
+  max-width: 1170px;
+  margin: auto;
+  height: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -24,7 +77,6 @@ body {
   flex-wrap: wrap;
   margin: 30px 100px;
 }
-
 .menu__item {
   font-family: 'Roboto';
   font-style: normal;
@@ -63,24 +115,42 @@ body {
 
 .first-screen {
 }
-.container {
+.first-screen__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .first-screen__offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 130px;
 }
-.line {
-}
-.first-screen__title {
-}
-.second__title {
-}
-.first-screen__description {
-}
-.button {
-}
-.button_dark {
-}
+
 .first-screen__product {
+  position: relative;
+  width: 440px;
+  margin-right: 270px;
 }
+
+.first-screen__circle {
+}
+.first-screen__watch {
+  position: relative;
+  left: 110px;
+  overflow: hidden;
+}
+.first-screen__circle {
+  width: auto;
+  height: 100%;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #eae3d4 100%);
+  mix-blend-mode: normal;
+}
+
 .price-block {
 }
 .watch_price {
