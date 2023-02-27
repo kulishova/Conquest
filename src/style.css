@@ -144,12 +144,11 @@ body {
   margin-right: 270px;
 }
 
-.first-screen__circle {
-}
 .first-screen__watch {
   position: relative;
   left: 110px;
 }
+
 .first-screen__circle {
   width: auto;
   height: 100%;
@@ -179,4 +178,82 @@ body {
 }
 .watch_about {
   padding: 8px;
+}
+
+/* second-screen */
+.second-screen {
+  overflow: hidden;
+}
+
+.second-screen__title {
+  font-family: 'Playfair Display';
+  font-size: 32px;
+  line-height: 43px;
+  color: var(--main-text);
+  text-align: center;
+  padding-bottom: 52px;
+}
+.second-screen__all {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  color: var(--main-text);
+  opacity: 0.9;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.second-screen__all span {
+  margin-top: 12px;
+  width: 104px;
+  border: 1px solid #c4c0b6;
+}
+.second-screen__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-bottom: 86px;
+}
+.second-screen__card {
+  font-family: 'Playfair Display';
+  background: #fdfdfb;
+  width: 370px;
+  height: 100%;
+}
+.card__top {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.card__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+.card__price {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+  text-transform: uppercase;
+}
+.card__circle {
+  background: url('img/Ellipse.png') no-repeat center;
+}
+.card_product {
+}
+.card__bottom {
+  display: flex;
+  align-items: center;
+}
+.card__bottom span {
+  cursor: pointer;
+  margin: 14px;
+}
+.line {
 }
