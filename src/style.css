@@ -22,7 +22,7 @@ body {
   height: 0px;
   left: 120px;
   top: 357px;
-  border: 1px solid #8b8371;
+  border: 0.5px solid #8b8371;
 }
 .button {
   cursor: pointer;
@@ -44,6 +44,7 @@ body {
   line-height: 60px;
   color: var(--main-text);
   padding: 16px 0;
+  padding: 8px;
 }
 .second__title {
   font-family: 'Playfair Display';
@@ -115,6 +116,13 @@ body {
 
 .first-screen {
 }
+.first__screen_line {
+  position: relative;
+  left: -14%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 .first-screen__wrapper {
   display: flex;
   justify-content: space-between;
@@ -141,7 +149,6 @@ body {
 .first-screen__watch {
   position: relative;
   left: 110px;
-  overflow: hidden;
 }
 .first-screen__circle {
   width: auto;
@@ -152,10 +159,24 @@ body {
 }
 
 .price-block {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  color: var(--main-text);
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+}
+.price-block_2 {
+  left: 90%;
+  top: 72%;
+  width: 100%;
 }
 .watch_price {
-}
-.watch-block {
+  padding: 8px;
 }
 .watch_about {
+  padding: 8px;
 }
