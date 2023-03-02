@@ -186,6 +186,10 @@ body {
 /* second-screen */
 .second-screen {
   overflow: hidden;
+  margin-top: -100px;
+  z-index: 99999 !important;
+  position: relative;
+  background-color: white;
 }
 
 .second-screen__title {
@@ -195,6 +199,7 @@ body {
   color: var(--main-text);
   text-align: center;
   padding-bottom: 52px;
+  margin-top: 79px;
 }
 .second-screen__all {
   font-family: 'Roboto';
@@ -337,7 +342,9 @@ body {
   color: var(--header-text);
   padding-top: 120px;
 }
-
+.third-screen__networks > i {
+  padding: 0 6px;
+}
 .third-screen__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
